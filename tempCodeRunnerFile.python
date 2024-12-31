@@ -1,0 +1,19 @@
+a=eval(input())
+b=eval(input())
+def my_mult_operation(a, b, operation):
+
+    if operation == "plus":
+        return a + b
+    elif operation == "minus":
+        return a - b
+    elif operation == "mult":
+        return a * b
+    elif operation == "div":
+        if b != 0:
+            return a / b
+        else:
+            return "Error: Division by zero"
+    elif operation == "pow":
+        return a ** b
+    else:
+        return "Error: Unknown operation"
